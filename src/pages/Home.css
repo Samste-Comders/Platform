@@ -27,6 +27,7 @@ nav {
 	display: flex;
 }
 .home-profilePic {
+ 	box-sizing: content-box;
     cursor: pointer;
     padding: 2rem;
 	width: 3rem;
