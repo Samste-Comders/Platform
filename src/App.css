@@ -6,12 +6,12 @@
 
 .appAside {
   width: 50%;
-  background-color: #6b5b95;
+  background-color:#03dac6;
 }
 
 .appForm {
   width: 50%;
-  background-color: #12130f;
+  background-color: #121212;
   padding: 25px 40px;
   overflow: auto;
 }
@@ -35,7 +35,7 @@
 }
 
 .pageSwitcherItem-active {
-  background-color: #6b5b95;
+  background-color:#03dac6;
   color: white;
 }
 
@@ -73,7 +73,7 @@
 
 .formTitleLink-active {
   color: white;
-  border-bottom: 1px solid #6b5b95;
+  border-bottom: 2px solid#03dac6;
 }
 
 .formField {
@@ -104,8 +104,8 @@
 }
 
 .formFieldButton {
-  background-color: #6b5b95;
-  color: white;
+  background-color:#03dac6;
+  color: rgb(0, 0, 0);
   border: none;
   outline: none;
   border-radius: 25px;
@@ -118,7 +118,7 @@
   color: #66707d;
   text-decoration: none;
   display: inline-block;
-  border-bottom: 1.5px solid #6b5b95;
+  border-bottom: 1.5px solid#03dac6;
   padding-bottom: 5px;
 }
 
@@ -134,7 +134,7 @@
 
 .formFieldTermsLink {
   color: white;
-  border-bottom: 1px solid #6b5b95;
+  border-bottom: 1px solid#03dac6;
   text-decoration: none;
   display: inline-block;
   padding-bottom: 2px;

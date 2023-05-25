@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import BaseAuth from "../Components/BaseAuth";
 
 const SignIn= () => {
   const [formData, setFormData] = useState({
-    email: "",
+    username: "",
     password: ""
   });
 
@@ -26,21 +27,23 @@ const SignIn= () => {
   };
 
   return (
+    <>
+
     <div className="formCenter">
       <form className="formFields" onSubmit={handleSubmit}>
         <div className="formField">
-          <label className="formFieldLabel" htmlFor="email">
-            E-Mail Address
+          <label className="formFieldLabel" htmlFor="username">
+            Username
           </label>
           <input
-            type="email"
-            id="email"
+            type="text"
+            id="username"
             className="formFieldInput"
-            placeholder="Enter your email"
-            name="email"
-            value={formData.email}
+            placeholder="Enter your Username"
+            name="username"
+            value={formData.username}
             onChange={handleChange}
-          />
+            />
         </div>
 
         <div className="formField">
@@ -55,17 +58,18 @@ const SignIn= () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
-          />
+            />
         </div>
 
         <div className="formField">
-          <button className="formFieldButton">Sign In</button>{" "}
-          <Link to="/" className="formFieldLink">
+          <button className="formFieldButton" >Sign In</button>{" "}
+          <Link to="/" className="formFieldLink" style={{marginLeft:"2rem"}}>
             Create an account
           </Link>
         </div>
       </form>
     </div>
+            </>
   );
 };
 

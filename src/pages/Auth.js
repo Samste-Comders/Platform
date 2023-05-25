@@ -1,57 +1,22 @@
 import React from "react";
-import { HashRouter as Router, Route, NavLink } from "react-router-dom";
-import SignUpForm from "./pages/SignUpForm";
-import SignInForm from "./pages/SignInForm";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
+import SignUpForm from "./Signup";
+import SignInForm from "./Signin";
 
-import "./App.css";
+import "../App.css";
+import BaseAuth from "../Components/BaseAuth";
 
 const Auth = () => {
   return (
-    <Router basename="/react-auth-ui/">
-      <div className="App">
-        <div className="appAside" />
-        <div className="appForm">
-          <div className="pageSwitcher">
-            <NavLink
-              to="/sign-in"
-              activeClassName="pageSwitcherItem-active"
-              className="pageSwitcherItem"
-            >
-              Sign In
-            </NavLink>
-            <NavLink
-              exact
-              to="/"
-              activeClassName="pageSwitcherItem-active"
-              className="pageSwitcherItem"
-            >
-              Sign Up
-            </NavLink>
-          </div>
+    <Router>
 
-          <div className="formTitle">
-            <NavLink
-              to="/sign-in"
-              activeClassName="formTitleLink-active"
-              className="formTitleLink"
-            >
-              Sign In
-            </NavLink>{" "}
-            or{" "}
-            <NavLink
-              exact
-              to="/"
-              activeClassName="formTitleLink-active"
-              className="formTitleLink"
-            >
-              Sign Up
-            </NavLink>
-          </div>
+          <Routes>
+            <Route path="/sign-up" element={<BaseAuth page={"signup"} compo={<SignUpForm/>} />} />
+            <Route path="/sign-in" element={<BaseAuth page={"signin"} compo={<SignInForm/>}/>} />
+          </Routes>
 
-          <Route exact path="/" component={SignUpForm} />
-          <Route path="/sign-in" component={SignInForm} />
-        </div>
-      </div>
+      
     </Router>
   );
 };
