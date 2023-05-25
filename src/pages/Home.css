@@ -1,0 +1,152 @@
+.home-container {
+	width: 100vw;
+	overflow-x: hidden;
+	height: 100vh;
+	background: #121212;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #000000;
+	padding: 0;
+	background-color: #03dac6;
+	height: 4rem;
+}
+.home-logo {
+	padding: 2rem;
+}
+.home-nav-end {
+	align-items: center;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+}
+.home-profilePic {
+    cursor: pointer;
+    padding: 2rem;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+.home-Poster-Holder {
+	margin: 1rem;
+    margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home-Poster {
+	border: 1px solid #03dac6;
+	-webkit-box-shadow: 18px 16px 43px -2px rgb(3, 218, 198,0.25);
+	-moz-box-shadow: 18px 16px 43px -2px rgb(3, 218, 198,0.25);
+	box-shadow: 18px 16px 43px -2px rgb(3, 218, 198,0.25);
+	border-radius: 18px;
+	width: 75%;
+	height: 50vh;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+}
+.home-display{
+    color: #fff;
+    margin-top: 4rem;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    /* border: 2px solid white; */
+}
+.home-rectangle{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: 2px solid gold;
+    width:  17%;
+    height: 3rem;
+}
+.home-rectangle:hover{
+    background: gold;
+    color: #000000;
+}
+.home-hr{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color:#03dac6;
+    margin-top: 2rem;
+    margin-left: 25%;
+    width: 50%;
+    height: 4rem;
+    border-bottom: 2px solid gold;
+    /* border-top: 2px solid gold; */
+}
+
+
+.home-contests > div > .home-hr{
+    border-radius: 18px;
+    color: #fff;
+    border: 2px solid #03dac6;
+}
+.home-hidden{
+    display: none;
+}
+
+@media (max-width: 768px) {
+	/* Styles for screens up to 768px wide */
+	.home-nav-end {
+		font-size: 14px;
+	}
+
+	.home-profilePic {
+		padding: 1rem;
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.home-Poster {
+		width: 90%;
+	}
+
+	.home-rectangle {
+		width: 25%;
+	}
+}
+
+@media (max-width: 480px) {
+	/* Styles for screens up to 480px wide */
+	.home-logo {
+		padding: 1rem;
+	}
+
+	.home-nav-end {
+		font-size: 12px;
+	}
+
+	.home-profilePic {
+		padding: 0.5rem;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	.home-Poster {
+		width: 95%;
+        height: 50%;
+	}
+
+	.home-rectangle {
+		width: 40%;
+	}
+    .home-hr{
+        margin-left: 15%;
+        width: 70%;
+    }
+}
