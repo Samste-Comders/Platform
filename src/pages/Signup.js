@@ -35,8 +35,8 @@ const SignUp = () => {
     <>
       <div className="formCenter">
         <form onSubmit={handleSubmit} className="formFields">
-          <div style={{ display: "flex" }}>
-            <div className="formField" style={{ width: "30rem" }}>
+          <div style={{ display: "flex" , justifyContent:"space-between" }}>
+            <div className="formField myclass"  >
               <label className="formFieldLabel" htmlFor="fullname">
                 Full Name
               </label>
@@ -50,7 +50,7 @@ const SignUp = () => {
                 onChange={handleChange}
               />
             </div>
-            <div className="formField" style={{ width: "30rem" }}>
+            <div className="formField myclass" >
               <label className="formFieldLabel" htmlFor="username">
                 UserName
               </label>
@@ -94,8 +94,8 @@ const SignUp = () => {
               onChange={handleChange}
             />
           </div>
-          <div style={{ display: "flex" }}>
-            <div className="formField" style={{ width: "30rem" }}>
+          <div style={{ display: "flex", justifyContent:"space-between"  }}>
+            <div className="formField myclass" >
               <label className="formFieldLabel" htmlFor="password">
                 Password
               </label>
@@ -109,7 +109,7 @@ const SignUp = () => {
                 onChange={handleChange}
               />
             </div>
-            <div className="formField" style={{ width: "30rem" }}>
+            <div className="formField myclass" >
               <label className="formFieldLabel" htmlFor="confirmPassword">
                 Confirm Password
               </label>
@@ -117,7 +117,7 @@ const SignUp = () => {
                 type="password"
                 id="confirmPassword"
                 className="formFieldInput"
-                placeholder="Confirm your password"
+                placeholder="Confirm password"
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={(event) => {
@@ -144,7 +144,7 @@ const SignUp = () => {
               />{" "}
               I agree all statements in{" "}
               <a href="null" className="formFieldTermsLink">
-                terms of service
+                Terms of Service
               </a>
             </label>
           </div>
@@ -154,7 +154,7 @@ const SignUp = () => {
             <Link
               to="/sign-in"
               className="formFieldLink"
-              style={{ marginLeft: "2rem" }}
+           
             >
               I'm already a member
             </Link>

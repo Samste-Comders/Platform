@@ -63,7 +63,9 @@ const SignIn= () => {
 
         <div className="formField">
           <button className="formFieldButton" >Sign In</button>{" "}
-          <Link to="/" className="formFieldLink" style={{marginLeft:"2rem"}}>
+          <Link to="/" className="formFieldLink" 
+        //   style={{marginLeft:"2rem"}}
+          >
             Create an account
           </Link>
         </div>

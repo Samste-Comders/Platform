@@ -84,6 +84,7 @@
   display: block;
   text-transform: uppercase;
   font-size: 0.9em;
+  text-align: left;
   color: white;
 }
 .formFieldInput {
@@ -120,6 +121,7 @@
   display: inline-block;
   border-bottom: 1.5px solid#03dac6;
   padding-bottom: 5px;
+  margin-left:2rem;
 }
 
 .formFieldCheckboxLabel {
@@ -140,7 +142,56 @@
   padding-bottom: 2px;
   margin-left: 5px;
 }
-
+.myclass{
+  width: 30rem;
+}
 .socialMediaButtons {
   padding: 10px 100px 10px 0px;
 }
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    min-height: 100vh;
+
+  }
+  .myclass{
+    width: 10rem;
+
+  }
+  .appForm {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .appAside,
+  .appForm {
+    width: 100%;
+  }
+
+  .pageSwitcher {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .formTitle {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .formFieldInput {
+    width: 100%;
+  }
+
+  .formFieldButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 0.9em;
+  }
+  .formFieldLink{
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .socialMediaButtons {
+    padding: 10px 0;
+  }
+}
+
