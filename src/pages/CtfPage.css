@@ -1,0 +1,45 @@
+.ctf-container {
+	width: 100vw;
+	overflow-x: hidden;
+	height: 100vh;
+	margin: 0;
+	background: #121926;
+	padding: 0;
+}
+.ctf-contestHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	background-color: #1a2332;
+    height: 60vh;
+    /* width: 50vw; */
+    /* border: 2px solid wheat; */
+}
+.ctf-contestHeader > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.ctf-title{
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 32px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+.ctf-imgHolder{
+    margin-left: 2rem;
+    border-radius: 12px;
+    /* border: 2px solid wheat; */
+    width: 30rem;
+}
+.eventDetails{
+    height: 100%;
+    width: 50%;
+    margin-left: 18rem;
+    margin-right: 4rem;
+    overflow-y: scroll;
+}
