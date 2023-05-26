@@ -8,7 +8,7 @@ const Home = () => {
 		<div className='home-container'>
 			<nav>
 				<div className='home-logo'>
-					<h1>Naam Main Kya Rakha Hai</h1>
+					<h1>Comders</h1>
 				</div>
 				<div className='home-nav-end'>
 					<div>Pajju0330</div>
@@ -21,14 +21,14 @@ const Home = () => {
 			<div className='home-content'>
 				<div className='home-display'>
 					<div
-						className='home-rectangle'
+						className={contests?"home-rectangle active":"home-rectangle"}
 						onClick={() => {
 							setContests(true);
 						}}>
 						Contests
 					</div>
 					<div
-						className='home-rectangle'
+						className={contests?"home-rectangle":"home-rectangle active"}
 						onClick={() => {
 							setContests(false);
 						}}>
@@ -39,7 +39,8 @@ const Home = () => {
 					<div className='home-title'>Title</div>
 					<div className='home-submissions'>Submissions</div>
 				</div>
-				<div className={contests ? "home-contests" : "home-contests home-hidden"}>
+				<div
+					className={contests ? "home-contests" : "home-contests home-hidden"}>
 					<div>
 						<div className='home-hr'>
 							<div>Question 1</div>
@@ -59,7 +60,8 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div className={contests ? "home-contests home-hidden" : "home-contests"}>
+				<div
+					className={contests ? "home-contests home-hidden" : "home-contests"}>
 					<div>
 						<div className='home-hr'>
 							<div>CTF 1</div>
