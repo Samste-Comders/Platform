@@ -80,7 +80,7 @@ function AccordionItem(props) {
         {props.hiddenText.dockerLink}
       </p>
       <p style={{borderRadius:"12px"}} className={`accordion__content ${activeStatus}`} >
-        <input type='text' style={{borderRadius:"8px",padding:"0.2rem"}} />
+        <input placeholder='Your flag' type='text' style={{borderRadius:"8px",padding:"0.2rem"}} />
         <button className='ctf-submit'>Submit</button>
       </p>
     </div>
