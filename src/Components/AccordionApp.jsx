@@ -45,7 +45,7 @@ function Accordion(props) {
   return (
     <div className="accordion" style={{paddingRight:"2%"}} >
       {props.hiddenTexts.map((hiddenText) => (
-        <AccordionItem className="singleAcc" key={hiddenText.label} hiddenText={hiddenText} />
+        <AccordionItem key={hiddenText.label} hiddenText={hiddenText} />
       ))}
     </div>
   );  
