@@ -38,14 +38,14 @@ function AccordionApp() {
 }
 
 function Header(props) {
-  return <h1>{props.title}</h1>;
+  return <h1 style={{color:"white", marginLeft:"1rem"}}>{props.title}</h1>;
 }
 
 function Accordion(props) {
   return (
     <div className="accordion">
       {props.hiddenTexts.map((hiddenText) => (
-        <AccordionItem key={hiddenText.label} hiddenText={hiddenText} />
+        <AccordionItem className="singleAcc" key={hiddenText.label} hiddenText={hiddenText} />
       ))}
     </div>
   );
