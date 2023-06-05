@@ -30,7 +30,7 @@ function AccordionApp() {
   ];
 
   return (
-    <div>
+    <div >
       <Header title={title} />
       <Accordion hiddenTexts={hiddenTexts} />
     </div>
@@ -38,17 +38,17 @@ function AccordionApp() {
 }
 
 function Header(props) {
-  return <h1 style={{color:"white", marginLeft:"1rem"}}>{props.title}</h1>;
+  return <h1 style={{color:"white", marginLeft:"1.2rem"}}>{props.title}</h1>;
 }
 
 function Accordion(props) {
   return (
-    <div className="accordion">
+    <div className="accordion" style={{paddingRight:"2%"}} >
       {props.hiddenTexts.map((hiddenText) => (
         <AccordionItem className="singleAcc" key={hiddenText.label} hiddenText={hiddenText} />
       ))}
     </div>
-  );
+  );  
 }
 
 function AccordionItem(props) {
@@ -61,25 +61,27 @@ function AccordionItem(props) {
   const activeStatus = visibility ? 'active' : '';
 
   return (
-    <div>
+    <div style={{marginBottom:"2rem"}}>
       <button
         className="accordion__button"
+        style={{ borderRadius:"12px" ,border:"2px solid black"}}
         onClick={handleToggleVisibility}
       >
         {props.hiddenText.label}
-        <span className={visibility ? 'fas fa-minus' : 'fas fa-plus'}></span>
+        <span color='white' className={visibility ? 'fas fa-minus' : 'fas fa-plus'}></span>
       </button>
-      <p className={`accordion__content ${activeStatus}`}>
+      <p style={{borderRadius:"12px"}} className={`accordion__content ${activeStatus}`} >
         {props.hiddenText.title}
       </p>
-      <p className={`accordion__content ${activeStatus}`}>
+      <p className={`accordion__content ${activeStatus}`} >
         {props.hiddenText.desc}
       </p>
-      <p className={`accordion__content ${activeStatus}`}>
+      <p className={`accordion__content ${activeStatus}`} >
         {props.hiddenText.dockerLink}
       </p>
-      <p className={`accordion__content ${activeStatus}`}>
-        {props.hiddenText.dockerLink}
+      <p style={{borderRadius:"12px"}} className={`accordion__content ${activeStatus}`} >
+        <input placeholder='Your flag' type='text' style={{borderRadius:"8px",padding:"0.2rem"}} />
+        <button className='ctf-submit'>Submit</button>
       </p>
     </div>
   );

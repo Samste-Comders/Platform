@@ -1,52 +1,65 @@
 .accordion {
-    font-size: 17px;
-    margin: 0 20px;
-  }
-  
-  .accordion__button {
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    width: 200%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: inherit;
-  }
-  
-  .accordion__button span {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: #000;
-    font-size: 15px;
-  }
-  
-  .accordion__button:focus {
-    outline: none;
-  }
-  
-  .accordion__content {
-    padding: 0 20px;
-    width: 200%;
-    opacity: 0;
-    transition: all .5s;
-    height: 0;
-    margin: 0;
-    margin-top: -10px;
-    border: 1px solid #f1f1f1;
-    border-top: 0;
-  }
-  
-  .accordion__content.active {
-      height: auto;
-      opacity: 1;
-      padding: 20px;
-  }
-  .singleAcc{
-    border: 2px solid black;
-  }
+  font-size: 17px;
+  margin: 0 20px;
+}
+
+.accordion__button {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  width: 200%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: inherit;
+}
+
+.accordion__button span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #000;
+  font-size: 15px;
+}
+
+.accordion__button:focus {
+  outline: none;
+}
+
+.accordion__content {
+  padding: 0 20px;
+  width: 200%;
+  opacity: 0;
+  transition: all 0.5s;
+  height: 0;
+  margin: 0;
+  margin-top: -10px;
+  background-color: rgb(212, 209, 166);
+  border: 1px solid #f1f1f1;
+  border-top: 0;
+}
+
+.accordion__content.active {
+  height: auto;
+  opacity: 1;
+  padding: 20px;
+}
+
+.ctf-submit {
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid gold;
+  color: goldenrod;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.ctf-submit:hover {
+  background-color: gold;
+  color: rgb(255, 255, 255);
+}

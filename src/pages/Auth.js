@@ -8,6 +8,7 @@ import "../App.css";
 import BaseAuth from "../Components/BaseAuth";
 import Home from "./Home";
 import CtfPage from "./CtfPage";
+import LeaderBoard from "../Components/LeaderBoard";
 
 
 const Auth = () => {
@@ -16,6 +17,7 @@ const Auth = () => {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/ctf/EVENT_ID' element={<CtfPage />} />
+				<Route path='/ctf/EVENT_ID/leaderboard' element={<LeaderBoard />} />
 				<Route
 					path='/sign-up'
 					element={<BaseAuth page={"signup"} compo={<SignUpForm />} />}

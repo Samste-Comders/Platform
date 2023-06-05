@@ -12,6 +12,7 @@
     align-items: center;
 	background-color: #1a2332;
     height: 60vh;
+
     /* width: 50vw; */
     /* border: 2px solid wheat; */
 }
@@ -20,6 +21,7 @@
     justify-content: flex-start;
     align-items: start;
     flex-direction: column;
+
     
 }
 .ctf-title{
@@ -40,6 +42,28 @@
     height: 100%;
     width: 50%;
     margin-left: 18rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
+    position: relative;
+    margin-top: 2rem;
     overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+.ctf-overview >h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ctf-overview >p{
+    color: gold;
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
 }
